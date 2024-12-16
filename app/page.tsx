@@ -1,101 +1,157 @@
+import Link from "next/link";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <main>
+      {/* Navbar */}
+      <header className="navbar">
+        <div className="container navbar-container">
+          <div className="logo">
+            {/* <Image src="/logo.png" alt="Logo" width={50} height={50} /> */}
+            <h1>Marcstra</h1>
+          </div>
+          <nav className="nav-links">
+            <Link href="/home">Home</Link>
+            <Link href="/aboutus">About</Link>
+            <Link href="/services">Services</Link>
+            <Link href="/contact">Contact</Link>
+            <Link href="/careers">Careers</Link>
+            <Link href="/support">Support</Link>
+          </nav>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+      </header>
+
+      {/* Hero Section */}
+      <section className="hero">
+        <div className="container hero-container">
+          <div className="hero-content">
+            <h1>Your Partner in Success</h1>
+            <p>
+              We specialize in delivering cutting-edge solutions to drive
+              business growth. Explore our expertise and discover how we can
+              transform your vision into reality.
+            </p>
+            <Link href="/services">
+              <button className="btn-primary">Discover Our Services</button>
+            </Link>
+          </div>
+          {/* <Image
+            src="/hero-image.jpg"
+            alt="Hero"
+            width={600}
+            height={400}
+            className="hero-image"
+          /> */}
+        </div>
+      </section>
+
+      {/* Services Section */}
+      <section className="services">
+        <div className="container">
+          <h2>Our Expertise</h2>
+          <div className="services-grid">
+            <div className="service">
+              {/* <Image src="/service1.png" alt="Web Development" width={80} height={80} /> */}
+              <h3>Web Development</h3>
+              <p>Building scalable and modern web applications tailored to your needs.</p>
+            </div>
+            <div className="service">
+              {/* <Image src="/service2.png" alt="UI/UX Design" width={80} height={80} /> */}
+              <h3>UI/UX Design</h3>
+              <p>
+                Crafting seamless and intuitive user experiences for web and
+                mobile platforms.
+              </p>
+            </div>
+            <div className="service">
+              {/* <Image src="/service3.png" alt="Digital Marketing" width={80} height={80} /> */}
+              <h3>Digital Marketing</h3>
+              <p>Enhancing your online presence to maximize reach and engagement.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Portfolio Section */}
+      <section className="portfolio">
+        <div className="container">
+          <h2>Our Work</h2>
+          <div className="portfolio-grid">
+            <div className="portfolio-item">
+              {/* <Image src="/portfolio1.jpg" alt="Project 1" width={400} height={300} /> */}
+              <h4>E-commerce Platform</h4>
+              <p>
+                A robust online store solution with custom features and
+                integrations.
+              </p>
+            </div>
+            <div className="portfolio-item">
+              {/* <Image src="/portfolio2.jpg" alt="Project 2" width={400} height={300} /> */}
+              <h4>Corporate Website</h4>
+              <p>
+                A professional website showcasing the brand’s expertise and
+                services.
+              </p>
+            </div>
+            <div className="portfolio-item">
+              {/* <Image src="/portfolio3.jpg" alt="Project 3" width={400} height={300} /> */}
+              <h4>Mobile Application</h4>
+              <p>
+                A sleek and user-friendly app tailored to client requirements.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="testimonials">
+        <div className="container">
+          <h2>What Clients Say</h2>
+          <div className="testimonials-grid">
+            <div className="testimonial">
+              <p>
+                "The team’s commitment to quality and innovation exceeded our
+                expectations. Highly recommend!"
+              </p>
+              <h5>– Emma Johnson, CEO</h5>
+            </div>
+            <div className="testimonial">
+              <p>
+                "Their expertise helped us launch our platform on time with
+                incredible results."
+              </p>
+              <h5>– Mark Anderson, Product Manager</h5>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Call-to-Action Section */}
+      <section className="cta">
+        <div className="container">
+          <h2>Ready to Elevate Your Business?</h2>
+          <p>
+            Let’s collaborate and create something extraordinary. Contact us
+            today to get started.
+          </p>
+          <Link href="/contact">
+            <button className="btn-primary">Get in Touch</button>
+          </Link>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="footer">
+        <div className="container footer-container">
+          <p>&copy; 2024 My Professional Brand. All Rights Reserved.</p>
+          <nav className="footer-links">
+            <Link href="/privacy">Privacy Policy</Link>
+            <Link href="/terms">Terms of Service</Link>
+          </nav>
+        </div>
       </footer>
-    </div>
+    </main>
   );
 }
