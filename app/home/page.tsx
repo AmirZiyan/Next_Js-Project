@@ -105,15 +105,15 @@ export default function Home() {
           <div className="testimonials-grid">
             <div className="testimonial">
               <p>
-                "The team’s commitment to quality and innovation exceeded our
-                expectations. Highly recommend!"
+                &quot;The team’s commitment to quality and innovation exceeded our
+                expectations. Highly recommend!&quot;
               </p>
               <h5>– Emma Johnson, CEO</h5>
             </div>
             <div className="testimonial">
               <p>
-                "Their expertise helped us launch our platform on time with
-                incredible results."
+                &quot;Their expertise helped us launch our platform on time with
+                incredible results.&quot;
               </p>
               <h5>– Mark Anderson, Product Manager</h5>
             </div>
