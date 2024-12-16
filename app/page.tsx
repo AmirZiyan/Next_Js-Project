@@ -35,13 +35,7 @@ export default function Home() {
               <button className="btn-primary">Discover Our Services</button>
             </Link>
           </div>
-          {/* <Image
-            src="/hero-image.jpg"
-            alt="Hero"
-            width={600}
-            height={400}
-            className="hero-image"
-          /> */}
+          {/* <Image src="/hero-image.jpg" alt="Hero" width={600} height={400} className="hero-image" /> */}
         </div>
       </section>
 
@@ -89,7 +83,7 @@ export default function Home() {
               {/* <Image src="/portfolio2.jpg" alt="Project 2" width={400} height={300} /> */}
               <h4>Corporate Website</h4>
               <p>
-                A professional website showcasing the brand’s expertise and
+                A professional website showcasing the brand&apos;s expertise and
                 services.
               </p>
             </div>
@@ -111,15 +105,15 @@ export default function Home() {
           <div className="testimonials-grid">
             <div className="testimonial">
               <p>
-                "The team’s commitment to quality and innovation exceeded our
-                expectations. Highly recommend!"
+                &quot;The team&apos;s commitment to quality and innovation exceeded our
+                expectations. Highly recommend!&quot;
               </p>
               <h5>– Emma Johnson, CEO</h5>
             </div>
             <div className="testimonial">
               <p>
-                "Their expertise helped us launch our platform on time with
-                incredible results."
+                &quot;Their expertise helped us launch our platform on time with
+                incredible results.&quot;
               </p>
               <h5>– Mark Anderson, Product Manager</h5>
             </div>
@@ -132,7 +126,7 @@ export default function Home() {
         <div className="container">
           <h2>Ready to Elevate Your Business?</h2>
           <p>
-            Let’s collaborate and create something extraordinary. Contact us
+            Let&apos;s collaborate and create something extraordinary. Contact us
             today to get started.
           </p>
           <Link href="/contact">

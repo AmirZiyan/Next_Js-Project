@@ -26,7 +26,7 @@ const page = () => {
       <section className="contact-us">
         <div className="container">
           <h1>Contact Us</h1>
-          <p>We'd love to hear from you! Reach out to us for any queries or concerns.</p>
+          <p>We&apos;d love to hear from you! Reach out to us for any queries or concerns.</p>
 
           {/* Contact Form */}
           <form action="/submit-form" method="POST" className="contact-form">

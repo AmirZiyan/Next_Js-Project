@@ -1,6 +1,5 @@
 import Link from "next/link";
 
-
 export default function Home() {
   return (
     <main>
@@ -36,13 +35,7 @@ export default function Home() {
               <button className="btn-primary">Discover Our Services</button>
             </Link>
           </div>
-          {/* <Image
-            src="/hero-image.jpg"
-            alt="Hero"
-            width={600}
-            height={400}
-            className="hero-image"
-          /> */}
+          {/* <Image src="/hero-image.jpg" alt="Hero" width={600} height={400} className="hero-image" /> */}
         </div>
       </section>
 
